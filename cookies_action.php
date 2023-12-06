@@ -19,10 +19,10 @@
                 echo "you are already registered<br>";
                 echo '<a href="cookies.php">Go back</a>';
             } else {
-                setcookie('name', $_GET['username'], 0, "", "", true, true);
-                setcookie('pass', $_GET['password'], 0, "", "", true, true);
+                setcookie('name', $_GET['username'], 0, "", "", false, false);
+                setcookie('pass', $_GET['password'], 0, "", "", false, false);
                 if ($_GET['username'] != '' && $_GET['password'] != ''){
-                    setcookie('authorized', '1', 0, "", "", true, true);
+                    setcookie('authorized', '1', 0, "", "", false, false);
                     echo "you have been registered.<br>";
                     echo '<a href="cookies.php">Go to login</a>';
                 } else {
