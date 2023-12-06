@@ -1,9 +1,4 @@
-<html>
-<head>
-    <title>Are you authorized?</title>
-</head>
-<body>
-    <?php
+<?php
         if ($_GET['submit'] == 'login'){
             if (isset($_COOKIE['authorized'])){
                 $name = $_GET["username"];
@@ -37,5 +32,11 @@
             }
         }
     ?>
+<html>
+<head>
+    <title>Are you authorized?</title>
+</head>
+<body>
+    
 </body>
 </html>
